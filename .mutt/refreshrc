@@ -1,0 +1,24 @@
+set my_trash_dir="$my_base_dir/trash"
+set my_spam_dir="$my_base_dir/spam"
+set my_archive_dir="$my_base_dir/archive"
+set my_drafts_dir="$my_base_dir/drafts"
+
+
+macro index,pager gi "<change-folder>!<enter>"  "change to inbox"
+macro index,pager gs "<change-folder>$my_spam_dir<enter>"   "change to spam dir"
+macro index,pager ga "<change-folder>$my_archive_dir<enter>" "change to archive"
+macro index,pager gd "<change-folder>$my_drafts_dir<enter>" "change to drafts"
+macro index,pager gr "<change-folder>$my_base_dir/respond<enter>" "change to respond"
+macro index,pager gw "<change-folder>$my_base_dir/wait<enter>" "change to wait"
+macro index,pager gt "<change-folder>$my_base_dir/action<enter>" "change to action"
+macro index,pager gn "<change-folder>$my_base_dir/sent<enter>" "change to sent"
+
+macro index,pager \Ci "<save-message>!<enter>"   "move to inbox"
+macro index,pager \Cs "<save-message>$my_spam_dir<enter>"   "mark message as spam"
+macro index,pager \Ca "<enter-command>unset wait_key<enter><pipe-message>~/bin/mutt-notmuch tag -inbox<enter><save-message>$my_archive_dir<enter>" "mark message as archive"
+macro index,pager \Cd "<save-message>$my_trash_dir<enter>"  "mark message to the trash"
+macro index,pager \Cr "<save-message>$my_base_dir/respond<enter>" "mark message as respond"
+macro index,pager \Cw "<save-message>$my_base_dir/wait<enter>" "mark message as wait"
+macro index,pager \Ct "<save-message>$my_base_dir/action<enter>" "mark message as action"
+
+# vim: set ft=muttrc :

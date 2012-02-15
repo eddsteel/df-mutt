@@ -1,0 +1,17 @@
+set mbox_type=mbox
+set from='edd@annyong'
+set envelope_from_address='edd@annyong'
+unset record
+set copy
+set move
+set mbox="+local/old"
+set spoolfile="+local/edd"
+set my_trash_dir="+local/trash"
+set my_spam_dir="+local/old"
+set my_archive_dir="+local/old"
+set my_drafts_dir="+local/old"
+color status color198 color234
+unset trash
+source "$my_cfg_dir/refreshrc"
+
+# vi: set ft=muttrc :

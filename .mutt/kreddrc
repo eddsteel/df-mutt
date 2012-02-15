@@ -1,0 +1,16 @@
+set mbox_type=Maildir
+set my_base_dir="+eddandkrista"
+set from='Edward Steel <edd@eddandkrista.com>'
+set envelope_from_address='edd@eddandkrista.com'
+set record="+eddandkrista/sent"
+set copy
+set move
+set mbox="+eddandkrista/archive"
+set spoolfile="+eddandkrista/INBOX"
+
+color status color226 color234
+
+unset trash
+source "$my_cfg_dir/refreshrc"
+
+# vi: set ft=muttrc :

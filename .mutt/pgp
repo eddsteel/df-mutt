@@ -1,0 +1,12 @@
+set pgp_autosign=yes
+set pgp_sign_as=D40385A0
+set pgp_replyencrypt=yes
+set pgp_timeout=1800
+set pgp_auto_decode=yes              # For enigmail users - interpret their inline signing.
+
+reply-hook "~h 'Outlook Express'" set crypt_autosign = no # For Outlook express users, use inline signing.
+reply-hook . set crypt_autosign = yes                     # luckier people.
+
+my_hdr X-PGP-Key: http://eddandkrista.com/edd.asc
+
+# set vi: ft=muttrc :
