@@ -37,10 +37,6 @@ folder-hook gmail "source $my_cfg_dir/gmailrc"
 folder-hook local "source $my_cfg_dir/localrc"
 folder-hook eddandkrista "source $my_cfg_dir/kreddrc"
 
-macro index,pager <f1> '<sync-mailbox><change-folder>+gmail/INBOX<enter>' "switch to gmail"
-macro index,pager <f2> '<sync-mailbox><change-folder>+eddandkrista/inbox<enter>' "switch to eddandkrista.com"
-macro index,pager <f3> '<sync-mailbox><change-folder>+local/edd<enter>' "switch to local mail"
-
 set header_cache="/srv/caches/mutt/header_cache"
 set message_cachedir="/srv/caches/mutt/cache"
 
