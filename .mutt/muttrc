@@ -100,6 +100,11 @@ source "~/.mutt/vimbrant"
 source "~/.mutt/pgp"
 source "~/.mutt/lists"
 
+# aliases
+set alias_file = "~/.mutt/aliases"
+set sort_alias = address
+source "~/.mutt/aliases"
+
 
 # Start in GMail
 set spoolfile = "~/Mail/gmail/INBOX"
