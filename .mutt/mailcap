@@ -1,5 +1,6 @@
 text/html; /usr/bin/lynx -dump -assume_charset=%{charset} -display_charset='utf8'  -force_html '%s'; needsterminal; copiousoutput; description=HTML Text; nametemplate=%s.html
 application/pdf; evince %s
+image/pdf; evince %s
 image/png; eog %s
 image/jpeg; eog %s
 image/gif; eog %s
