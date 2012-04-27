@@ -27,6 +27,7 @@ bind pager f    next-page
 bind pager ,b   bounce-message    
 bind pager ,f   forward-message   
 bind pager ,r   group-reply       
+bind index,pager ,a create-alias
 bind pager ,m   mail              
 bind pager ,L   list-reply        
 
