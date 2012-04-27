@@ -1,7 +1,8 @@
 macro index,pager <f1> '<sync-mailbox><change-folder>+gmail/INBOX<enter>' "switch to gmail"
 macro index,pager <f2> '<sync-mailbox><change-folder>+eddandkrista/inbox<enter>' "switch to eddandkrista.com"
 macro index,pager <f3> '<sync-mailbox><change-folder>+local/edd<enter>' "switch to local mail"
+macro index,pager <f4> '<sync-mailbox><change-folder>+hootsuite/INBOX<enter>' "switch to hootsuite"
 
-mailboxes "+eddandkrista/inbox" "+gmail/INBOX" "+local/edd"
+mailboxes "+eddandkrista/inbox" "+gmail/INBOX" "+local/edd" "+hootsuite/INBOX"
 
 # vi: set ft=muttrc :

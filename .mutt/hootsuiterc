@@ -1,0 +1,16 @@
+set mbox_type=Maildir
+set my_base_dir="+hootsuite"
+set from='Edward Steel <edward.steel@hootsuite.com>'
+set envelope_from_address='edward.steel@hootsuite.com'
+unset record # automatic on gmail
+unset copy  # automatic on gmail
+unset move # automatic on gmail
+set mbox="+hootsuite/archive"
+set spoolfile="+hootsuite/INBOX"
+
+color status color033 color234
+
+set trash="+hootsuite/trash"
+
+source "$my_cfg_dir/refreshrc"
+# vi: set ft=muttrc :
