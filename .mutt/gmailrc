@@ -6,7 +6,7 @@ unset record # automatic on gmail
 unset copy  # automatic on gmail
 unset move # automatic on gmail
 set mbox="+gmail/archive"
-set spoolfile="+gmail/INBOX"
+set spoolfile="+gmail/1 GMail"
 
 color status color118 color234
 

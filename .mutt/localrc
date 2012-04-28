@@ -5,7 +5,7 @@ unset record
 set copy
 set move
 set mbox="+local/old"
-set spoolfile="+local/edd"
+set spoolfile="+local/3 Local"
 set my_trash_dir="+local/trash"
 set my_spam_dir="+local/old"
 set my_archive_dir="+local/old"

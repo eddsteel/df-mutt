@@ -108,4 +108,6 @@ source "~/.mutt/aliases"
 
 
 # Start in GMail
-set spoolfile = "~/Mail/gmail/INBOX"
+set spoolfile = "~/Mail/gmail/1 GMail"
+
+set sidebar_visible

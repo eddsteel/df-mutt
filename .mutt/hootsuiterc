@@ -6,7 +6,7 @@ unset record # automatic on gmail
 unset copy  # automatic on gmail
 unset move # automatic on gmail
 set mbox="+hootsuite/archive"
-set spoolfile="+hootsuite/INBOX"
+set spoolfile="+hootsuite/4 HootSuite"
 
 color status color033 color234
 

@@ -6,7 +6,7 @@ set record="+eddandkrista/sent"
 set copy
 set move
 set mbox="+eddandkrista/archive"
-set spoolfile="+eddandkrista/INBOX"
+set spoolfile="+eddandkrista/2 eddandkrista"
 
 color status color226 color234
 

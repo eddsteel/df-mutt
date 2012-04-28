@@ -1,8 +1,9 @@
-macro index,pager <f1> '<sync-mailbox><change-folder>+gmail/INBOX<enter>' "switch to gmail"
-macro index,pager <f2> '<sync-mailbox><change-folder>+eddandkrista/inbox<enter>' "switch to eddandkrista.com"
-macro index,pager <f3> '<sync-mailbox><change-folder>+local/edd<enter>' "switch to local mail"
-macro index,pager <f4> '<sync-mailbox><change-folder>+hootsuite/INBOX<enter>' "switch to hootsuite"
+macro index,pager <f1> '<sync-mailbox><change-folder>=gmail/1<tab><enter>' "switch to gmail"
+macro index,pager <f2> '<sync-mailbox><change-folder>=eddandkrista/2<tab><enter>' "switch to eddandkrista.com"
+macro index,pager <f3> '<sync-mailbox><change-folder>=local/3<tab><enter>' "switch to local mail"
+macro index,pager <f4> '<sync-mailbox><change-folder>=hootsuite/4<tab><enter>' "switch to hootsuite"
 
-mailboxes "+eddandkrista/inbox" "+gmail/INBOX" "+local/edd" "+hootsuite/INBOX"
+mailboxes  "+gmail/1 GMail" "+gmail/action" "+gmail/respond" "+gmail/wait" "+eddandkrista/2 eddandkrista" "+local/3 Local" "+hootsuite/4 HootSuite" "+hootsuite/action" "+hootsuite/respond" "+hootsuite/wait"
+
 
 # vi: set ft=muttrc :
