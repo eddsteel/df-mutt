@@ -1,9 +1,5 @@
 set folder="~/Mail"
 
-set xterm_set_titles
-set xterm_title="mutt %f (%n/%m)"
-set beep_new
-
 set sendmail="/usr/bin/msmtp"
 set realname='Edward Steel'
 set envelope_from
@@ -21,7 +17,6 @@ unset reply_self
 
 set indent_str="> "
 set attribution="On %d, %n wrote:"
-unset sidebar_visible
 unset help
 
 alternates edward.steel@gmail.com edd@eddandkrista.com edward.steel@hootsuite.com
@@ -65,8 +60,6 @@ set smart_wrap                # don't split words
 set tilde                     # show tildes like in vim
 unset markers                 # no ugly plus signs
 
-set sidebar_delim = ' '
-unset sidebar_shortpath
 
 
 # composing mail
@@ -101,6 +94,10 @@ source "~/.mutt/vimbrant"
 source "~/.mutt/pgp"
 source "~/.mutt/lists"
 
+# conditional includes
+
+source "~/.mutt/features.sh|"
+
 # aliases
 set alias_file = "~/.mutt/aliases"
 set sort_alias = address
@@ -110,4 +107,3 @@ source "~/.mutt/aliases"
 # Start in GMail
 set spoolfile = "~/Mail/gmail/1 GMail"
 
-set sidebar_visible
