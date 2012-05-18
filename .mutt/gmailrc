@@ -10,7 +10,5 @@ set spoolfile="+gmail/1 GMail"
 
 color status color118 color234
 
-set trash="+gmail/trash"
-
 source "$my_cfg_dir/refreshrc"
 # vi: set ft=muttrc :

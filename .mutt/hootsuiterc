@@ -10,7 +10,5 @@ set spoolfile="+hootsuite/4 HootSuite"
 
 color status color033 color234
 
-set trash="+hootsuite/trash"
-
 source "$my_cfg_dir/refreshrc"
 # vi: set ft=muttrc :

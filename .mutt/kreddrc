@@ -10,7 +10,6 @@ set spoolfile="+eddandkrista/2 eddandkrista"
 
 color status color226 color234
 
-unset trash
 source "$my_cfg_dir/refreshrc"
 
 # vi: set ft=muttrc :
