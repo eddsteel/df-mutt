@@ -10,3 +10,7 @@ if mutt -v | grep -q 'features/xtitles'; then
 	echo 'set xterm_set_titles'
 	echo 'set xterm_title="mutt %f (%n/%m)"'
 fi
+
+if test -d ~/.gnupg; then
+	echo 'source "~/.mutt/pgp"'
+fi

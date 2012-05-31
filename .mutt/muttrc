@@ -91,7 +91,6 @@ macro index \Cy "<limit>~y" "Limit view to label"
 source "~/.mutt/mailboxes"
 source "~/.mutt/bindings"
 source "~/.mutt/vimbrant"
-source "~/.mutt/pgp"
 source "~/.mutt/lists"
 
 # conditional includes
