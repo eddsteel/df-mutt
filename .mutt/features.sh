@@ -15,9 +15,11 @@ if test -d ~/.gnupg; then
 	echo 'source "~/.mutt/pgp"'
 fi
 
-case `uname`
-	Darwin) 
+case `uname` in
+	"Darwin")
 		echo 'set mailcap_path = ~/.mutt/mailcap.osx'
+		echo 'set query_command="goobook query \"%s\""'
+		echo 'bind editor <Tab> complete-query'
 		;;
 	*)
 		echo 'set mailcap_path = ~/.mutt/mailcap'
