@@ -59,8 +59,6 @@ set smart_wrap                # don't split words
 set tilde                     # show tildes like in vim
 unset markers                 # no ugly plus signs
 
-
-
 # composing mail
 set fcc_attach                # save attachments with the body
 unset mime_forward            # forward attachments as part of body
@@ -93,7 +91,6 @@ source "~/.mutt/vimbrant"
 source "~/.mutt/lists"
 
 # conditional includes
-
 source "~/.mutt/features.sh|"
 
 # aliases
