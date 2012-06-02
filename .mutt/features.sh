@@ -14,3 +14,12 @@ fi
 if test -d ~/.gnupg; then
 	echo 'source "~/.mutt/pgp"'
 fi
+
+case `uname`
+	Darwin) 
+		echo 'set mailcap_path = ~/.mutt/mailcap.osx'
+		;;
+	*)
+		echo 'set mailcap_path = ~/.mutt/mailcap'
+		;;
+esac

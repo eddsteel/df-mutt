@@ -36,7 +36,6 @@ folder-hook hootsuite "source $my_cfg_dir/hootsuiterc"
 set header_cache="/srv/caches/mutt/header_cache"
 set message_cachedir="/srv/caches/mutt/cache"
 
-set mailcap_path = ~/.mutt/mailcap
 set tmpdir = ~/.mutt/temp
 
 set mail_check = 30          # Not 0 because of UI issues
