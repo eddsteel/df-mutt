@@ -20,6 +20,7 @@ case `uname` in
 		echo 'set mailcap_path = ~/.mutt/mailcap.osx'
 		echo 'set query_command="goobook query \"%s\""'
 		echo 'bind editor <Tab> complete-query'
+		echo 'set beep_new'
 		;;
 	*)
 		echo 'set mailcap_path = ~/.mutt/mailcap'
