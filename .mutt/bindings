@@ -34,7 +34,6 @@ bind pager ,L   list-reply
 macro index,pager ",g" "<pipe-message>~/.org/bin/ingest-mail<enter><enter>"
 macro index,pager ",c" "<enter-command>unset wait_key<enter><pipe-message>~/.mutt/bin/parse_remind.pl<enter>"
 
-macro index ,s "<enter-command>unset wait_key<enter><shell-escape>~/.mutt/bin/mutt-notmuch --prompt search<enter><change-folder-readonly>~/.cache/mutt_results<enter>" "search mail (using notmuch)"
 macro index ,h "<enter-command>unset wait_key<enter><pipe-message>~/.mutt/bin/mutt-notmuch thread<enter><change-folder-readonly>~/.cache/mutt_results<enter><enter-command>set wait_key<enter>" "search and reconstruct owning thread (using notmuch)"
 macro index ,t "<enter-command>unset wait_key<enter><pipe-message>~/.mutt/bin/mutt-notmuch tag '-inbox'<enter>" "remove message from inbox (using notmuch)"
 

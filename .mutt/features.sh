@@ -21,8 +21,10 @@ case `uname` in
 		echo 'set query_command="goobook query \"%s\""'
 		echo 'bind editor <Tab> complete-query'
 		echo 'set beep_new'
+		echo 'macro index ,s "<enter-command>unset wait_key<enter><shell-escape>~/.mutt/bin/mutt-notmuch.py -G <enter><change-folder-readonly>~/.cache/mutt_results<enter>" "search mail (using notmuch)"'
 		;;
 	*)
 		echo 'set mailcap_path = ~/.mutt/mailcap'
+		echo 'macro index ,s "<enter-command>unset wait_key<enter><shell-escape>~/.mutt/bin/mutt-notmuch.pl --prompt search<enter><change-folder-readonly>~/.cache/mutt_results<enter>" "search mail (using notmuch)"'
 		;;
 esac
