@@ -22,6 +22,7 @@ case `uname` in
 		echo 'bind editor <Tab> complete-query'
 		echo 'set beep_new'
 		echo 'macro index ,s "<enter-command>unset wait_key<enter><shell-escape>~/.mutt/bin/mutt-notmuch.py -G <enter><change-folder-readonly>~/.cache/mutt_results<enter>" "search mail (using notmuch)"'
+		echo 'set pgp_autosign=yes' # Temporary fix
 		;;
 	*)
 		echo 'set mailcap_path = ~/.mutt/mailcap'

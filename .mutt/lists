@@ -1,3 +1,5 @@
 subscribe arch-general.archlinux.org
+subscribe akka-user.googlegroups.com
+subscribe scala-user.googlegroups.com
 
 # vi: set ft=muttrc :

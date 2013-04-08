@@ -1,5 +1,6 @@
-text/html; w3m -dump -o display_link_number=1 -I%{charset} -O'utf8'  '%s'; needsterminal; copiousoutput; description=HTML Text; nametemplate=%s.html
-application/pdf; open %s
-image/pdf; open %s
-image/*; open %s
+text/html; lynx -dump -nolist -width=120 -assume_charset=%{charset} -display_charset='utf8'  -force_html '%s' ; needsterminal; copiousoutput; description=HTML Text; nametemplate=%s.html
+# text/html; w3m -dump -o display_link_number=1 -I%{charset} -O'utf8'  '%s'; needsterminal; copiousoutput; description=HTML Text; nametemplate=%s.html
+application/pdf; ~/.mutt/bin/view_attachment.sh %s -
+image/pdf; ~/.mutt/bin/view_attachment.sh %s -
+image/*; ~/.mutt/bin/view_attachment.sh %s -
 application/msword; antiword %s ; copiousoutput
