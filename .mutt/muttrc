@@ -21,7 +21,7 @@ unset help
 
 alternates edward.steel@gmail.com edd@eddandkrista.com edward.steel@hootsuite.com
 
-set editor="/usr/bin/vim"
+set editor="emacsclient"
 set autoedit
 set edit_headers
 set implicit_autoview
